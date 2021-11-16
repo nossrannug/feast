@@ -14,7 +14,7 @@ The BigQuery offline store provides support for reading [BigQuerySources](../dat
 {% code title="feature\_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: gs://my-bucket/data/registry.db
+registry: gs://my-bucket/data/registry.pb
 provider: gcp
 offline_store:
   type: bigquery

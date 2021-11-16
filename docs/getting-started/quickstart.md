@@ -69,7 +69,7 @@ Let's take a look at the resulting demo repo itself. It breaks down into
 {% tab title="feature_store.yaml" %}
 ```yaml
 project: my_project
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store:
     path: data/online_store.db

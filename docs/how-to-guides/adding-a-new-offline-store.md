@@ -221,7 +221,7 @@ To use our custom file offline store, we can use the following `feature_store.ya
 {% code title="feature_repo/feature_store.yaml" %}
 ```yaml
 project: test_custom
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 offline_store: 
     type: feast_custom_offline_store.file.CustomFileOfflineStore
@@ -233,7 +233,7 @@ If additional configuration for the offline store is **not **required, then we c
 {% code title="feature_repo/feature_store.yaml" %}
 ```yaml
 project: test_custom
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 offline_store: feast_custom_offline_store.file.CustomFileOfflineStore
 ```

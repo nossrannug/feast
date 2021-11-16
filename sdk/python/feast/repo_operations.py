@@ -125,7 +125,7 @@ def parse_repo(repo_root: Path) -> ParsedRepo:
 
 
 @log_exceptions_and_usage
-def apply_total(repo_config: RepoConfig, repo_path: Path, skip_source_validation: bool):
+def apply_total(repo_path: Path, skip_source_validation: bool):
     from colorama import Fore, Style
 
     os.chdir(repo_path)

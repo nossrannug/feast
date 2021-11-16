@@ -12,7 +12,7 @@ The [SQLite](https://www.sqlite.org/index.html) online store provides support fo
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store:
   type: sqlite

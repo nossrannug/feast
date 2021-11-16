@@ -262,6 +262,15 @@ class RepoConfig(FeastBaseModel):
             )
         return v
 
+    @root_validator(pre=True)
+    def _validate_registry(cls, values):
+        if "registry" not in values:
+            print(
+                "Warning: Feast 0.17 and onwards will require 'registry' to be set "
+                "in the feature_store.yaml file."
+            )
+        return values
+
     @validator("flags")
     def _validate_flags(cls, v):
         if not isinstance(v, Dict):

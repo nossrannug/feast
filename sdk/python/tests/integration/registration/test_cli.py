@@ -120,7 +120,7 @@ def setup_third_party_provider_repo(provider_name: str):
             dedent(
                 f"""
         project: foo
-        registry: data/registry.db
+        registry: data/registry.pb
         provider: {provider_name}
         online_store:
             path: data/online_store.db

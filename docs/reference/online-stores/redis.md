@@ -14,7 +14,7 @@ Connecting to a single Redis instance
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store:
   type: redis
@@ -27,7 +27,7 @@ Connecting to a Redis Cluster with SSL enabled and password authentication
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store:
   type: redis

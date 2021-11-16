@@ -10,7 +10,7 @@
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: gs://my-bucket/data/registry.db
+registry: gs://my-bucket/data/registry.pb
 provider: gcp
 ```
 {% endcode %}

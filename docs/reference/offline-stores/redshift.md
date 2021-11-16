@@ -14,7 +14,7 @@ The Redshift offline store provides support for reading [RedshiftSources](../dat
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: aws
 offline_store:
   type: redshift

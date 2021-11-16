@@ -12,7 +12,7 @@ The File offline store provides support for reading [FileSources](../data-source
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 offline_store:
   type: file

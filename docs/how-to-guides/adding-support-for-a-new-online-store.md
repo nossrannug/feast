@@ -241,7 +241,7 @@ To use our MySQL online store, we can use the following `feature_store.yaml`:
 {% code title="feature_repo/feature_store.yaml" %}
 ```yaml
 project: test_custom
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store: 
     type: feast_custom_online_store.mysql.MySQLOnlineStore
@@ -255,7 +255,7 @@ If additional configuration for the online store is **not **required, then we ca
 {% code title="feature_repo/feature_store.yaml" %}
 ```yaml
 project: test_custom
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store: feast_custom_online_store.mysql.MySQLOnlineStore
 ```

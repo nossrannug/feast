@@ -9,7 +9,7 @@ The [Datastore](https://cloud.google.com/datastore) online store provides suppor
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: gcp
 online_store:
   type: datastore

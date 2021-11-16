@@ -364,9 +364,8 @@ def apply_total_command(ctx: click.Context, skip_source_validation: bool):
     """
     repo = ctx.obj["CHDIR"]
     cli_check_repo(repo)
-    repo_config = load_repo_config(repo)
     try:
-        apply_total(repo_config, repo, skip_source_validation)
+        apply_total(repo, skip_source_validation)
     except FeastProviderLoginError as e:
         print(str(e))
 

@@ -1,5 +1,5 @@
 project: my_project
-registry: data/registry.db
+registry: data/registry.pb
 provider: aws
 online_store:
   type: dynamodb

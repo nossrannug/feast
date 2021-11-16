@@ -7,7 +7,7 @@
 {% code title="feature_store.yaml" %}
 ```yaml
 project: loyal_spider
-registry: data/registry.db
+registry: data/registry.pb
 provider: local
 online_store:
     type: sqlite

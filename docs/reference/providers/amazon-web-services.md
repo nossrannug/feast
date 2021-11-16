@@ -10,7 +10,7 @@
 {% code title="feature_store.yaml" %}
 ```yaml
 project: my_feature_repo
-registry: data/registry.db
+registry: data/registry.pb
 provider: aws
 online_store:
   type: dynamodb
